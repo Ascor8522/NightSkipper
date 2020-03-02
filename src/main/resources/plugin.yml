@@ -1,0 +1,40 @@
+main: be.ascor8522.nightskipper.NightSkipper
+name: NightSkipper
+version: 1.0.0
+description: A plugin to skip the night with a poll system
+api-version: "1.14"
+authors: [Ascor8522]
+website: ascor8522.be/nightskipper
+depend: []
+prefix: NSkip.
+softdepend: []
+loadbefore: []
+commands:
+  debugger:
+    description: shows all sleep polls
+    aliases: [dbg]
+    permission: be.ascor8522.nightskipper.debugger
+    permission-message: You do not have permission to use this command.
+    usage: /debugger
+  skipnight:
+    description: skips the night
+    aliases: [skn, sn]
+    permission: be.ascor8522.nightskipper.skipnight
+    permission-message: You do not have permission to use this command.
+    usage: /skipnight
+  notskipnight:
+    description: not skip the night
+    aliases: [nskn, nsn]
+    permission: be.ascor8522.nightskipper.notskipnight
+    permission-message: You do not have permission to use this command.
+    usage: /notskipnight
+permissions:
+  be.ascor8522.nightskipper.debugger:
+    description: Allows to run the "/debugger" command
+    default: op
+  be.ascor8522.nightskipper.skipnight:
+    description: Allows to run the "/skipnight" command
+    default: true
+  be.ascor8522.nightskipper.notskipnight:
+    description: Allows to run the "/notskipnight" command
+    default: true
